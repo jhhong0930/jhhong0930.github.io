@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="src/inext.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  <div class="content-area content1">
+
+    <div class="clockContainer">
+      <div class="timeNow"></div>
+      <div class="dateNow"></div>
+      <div class="weather">
+        <span class="js-weather"></span>
+      </div>
+    </div>
+    <form class="js-form form">
+      <section class="content">
+        <span class="input input--kaede">
+          <input class="input__field input__field--kaede" type="text" id="input-35" />
+          <label class="input__label input__label--kaede" for="input-35">
+            <span class="input__label-content input__label-content--kaede">First Name</span>
+          </label>
+        </span>
+      </section>  
+    </form>
+
+    <section class="content">
+      <h4 class="js-greetings greetings"></h4>
+    </section>
+    
+  </div>
+
+  <div class="container content2">
+        
+    <div class="form-group">
+        <form class="taskForm">
+            <input type="text" class="taskInput form-control" placeholder="Write a to do">      
+        </form>
+    </div>
+
+    <h2>Pending</h2>
+    <table class="table table-striped">
+        <tbody class="pendingList"></tbody>
+    </table>
+
+    <h2>Finished</h2>
+    <table class="table table-striped">
+        <tbody class="finishedList"></tbody>
+    </table>
+
+  </div>
+
+
+  <script src="src/clock.js"></script>
+  <script src="src/background.js"></script>
+  <script src="src/greeting.js"></script>
+  <script src="src/todo.js"></script>
+  <script src="src/weather.js"></script>
+</body>
+</html>
